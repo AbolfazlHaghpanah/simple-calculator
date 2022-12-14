@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonNumber" parent="Theme.AppCompat">
+        <item name="colorAccent" >@color/btn_number</item>
+    </style>
+    <style name="ButtonOprator" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/btn_operator</item>
+    </style>
+</resources>

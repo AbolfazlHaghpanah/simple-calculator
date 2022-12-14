@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="56dp"
+        android:layout_above="@id/numberContainer3"
+        android:layout_margin="20dp"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/numberContainer1"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/numberContainer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="32dp"
+        android:textAlignment="textEnd"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/numberContainer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="32dp"
+        android:layout_above="@id/numberContainer3"/>
+
+    <TextView
+        android:id="@+id/numberContainer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="48dp"
+        android:layout_above="@id/gridLayout"
+        android:visibility="gone"/>
+
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/AC"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="AC"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/Backspace"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="---"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/percent"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="%"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/Division"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="/"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/number7"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="7"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/number8"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="8"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/number9"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="9"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="*"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/number4"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="4"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/number5"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="5"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/number6"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="6"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="-"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/number1"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="1"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/number2"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="2"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/number3"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="3"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="+"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/noId"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="$"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/number0"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="0"
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/dot"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="."
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_margin="@dimen/numbers_margin"
+            android:background="@drawable/background_number_btn"
+            android:text="="
+            android:textSize="20dp"
+            android:theme="@style/ButtonOprator" />
+
+
+    </GridLayout>
+</RelativeLayout>
